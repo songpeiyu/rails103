@@ -8,7 +8,7 @@ end
 
 def show
   @group = Group.find(params[:id])
-  @posts = @group.post.order("created_at DESC")
+  @posts = @group.post.recent
 end
 
 def edit
