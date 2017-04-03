@@ -11,7 +11,7 @@ end
 
 namespace :account do
   resources :groups
-  resources :posts 
+  resources :posts
 end
 root 'groups#index'
 end
